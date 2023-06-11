@@ -6,8 +6,8 @@ tuple2=('Geeks','for','geeks')
 a,b,c=tuple2
 print(a,b,c)
 
-# d,e=tuple2
-# print(d,e)
+d,e=tuple2
+print(d,e)
 
 sorted(tuple2)
 print(tuple2)
