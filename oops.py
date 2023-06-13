@@ -74,34 +74,62 @@
 # d=D()
 # print(d.e,d.c)
 
-# Polymorphism
-def add(x,y,z=0):
-    return x+y+z
+# # Polymorphism
+# def add(x,y,z=0):
+#     return x+y+z
 
-print(add(2,3))
-print(add(2,3,5))
+# print(add(2,3))
+# print(add(2,3,5))
 
 
-class bird:
-    def show(self):
-        print('bird')
-    def flight(self):
-        print('fly')
+# class bird:
+#     def show(self):
+#         print('bird')
+#     def flight(self):
+#         print('fly')
 
-class sparrow(bird):
-    def flight(self):
-        print('fly sparrow')
+# class sparrow(bird):
+#     def flight(self):
+#         print('fly sparrow')
 
-class peacock(bird):
-    def flight(self):
-        print('peacock fly')
+# class peacock(bird):
+#     def flight(self):
+#         print('peacock fly')
 
-b=bird()
-b.show()
-b.flight()
-s=sparrow()
-s.show()
-s.flight()
-p=peacock()
-p.show()
-p.flight()
+# b=bird()
+# b.show()
+# b.flight()
+# s=sparrow()
+# s.show()
+# s.flight()
+# p=peacock()
+# p.show()
+# p.flight()
+
+# Encapsulation
+class base:
+    def __init__(self):
+        self.a=10 #Public
+        self._b=20 #Protected
+        self.__c=30 #Private
+
+class derived(base):
+    def __init__(self):
+        base.__init__(self)
+        print('Public ',self.a)
+        print('Protected ',self._b)
+        # print('Private ',self.__c)
+
+d=derived()
+d.a=15
+d._b=25
+print('outside ',d.a)
+print('outside ',d._b)
+# print('outside ',d.__c)
+
+class demo:
+    def __init__(self):
+        print(d.a)
+        print(d._b)
+
+a=demo()
