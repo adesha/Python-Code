@@ -61,15 +61,15 @@
 # gc=grandChild('abc',5,'KA')
 # print(gc.getName(),gc.getAge(),gc.getAddress())
 
-class C(object):
-    def __init__(self):
-        self.c=21
-        self.__d=42 #Private
+# class C(object):
+#     def __init__(self):
+#         self.c=21
+#         self.__d=42 #Private
 
-class D(C):
-    def __init__(self):
-        self.e=10
-        C.__init__(self)
+# class D(C):
+#     def __init__(self):
+#         self.e=10
+#         C.__init__(self)
 
-d=D()
-print(d.e,d.c)
+# d=D()
+# print(d.e,d.c)
