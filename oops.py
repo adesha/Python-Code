@@ -73,3 +73,35 @@
 
 # d=D()
 # print(d.e,d.c)
+
+# Polymorphism
+def add(x,y,z=0):
+    return x+y+z
+
+print(add(2,3))
+print(add(2,3,5))
+
+
+class bird:
+    def show(self):
+        print('bird')
+    def flight(self):
+        print('fly')
+
+class sparrow(bird):
+    def flight(self):
+        print('fly sparrow')
+
+class peacock(bird):
+    def flight(self):
+        print('peacock fly')
+
+b=bird()
+b.show()
+b.flight()
+s=sparrow()
+s.show()
+s.flight()
+p=peacock()
+p.show()
+p.flight()
