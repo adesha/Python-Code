@@ -1,25 +1,25 @@
 # Linear - Array,Stack,Queue,Linked list,Hash table 
 # Non-Linear - Trees, Graph,
 
-# import array as arr
+import array as arr
 
-# a=arr.array('i',[1,2,3])
-# print(a)
-# for i in range(0,3):
-#     print(a[i],end=" ")
+a=arr.array('i',[1,2,3])
+print(a)
+for i in range(0,3):
+    print(a[i],end=" ")
 
-# print('')
+print('')
 
-# a.insert(1,4)
-# print(a)
+a.insert(1,4)
+print(a)
 
-# a.pop()
-# print(a)
-# a.pop(1)
-# print(a)
-# a[1]=6
-# print(a)
-# print(len(a))
+a.pop()
+print(a)
+a.pop(1)
+print(a)
+a[1]=6
+print(a)
+print(len(a))
 list=[1,2,3]
 print(len(list))
 list.append(4)
